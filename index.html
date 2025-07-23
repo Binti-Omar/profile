@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .bar {
+                background-color:deepskyblue;
+                color: white;
+                height: 40px;
+                position: fixed;
+                width: 100%;
+            }
+            .bar ul {
+                list-style: none;
+                padding: 10px;
+                margin: 0;
+                display: flex;
+                font-weight: bold;
+            }
+            .bar li:hover{
+                color: crimson;
+            }
+            .bar .list {
+                margin-right: 60%;
+            }
+            .bar li {
+                padding: 10px;
+            }.one {
+                display: flex;
+                justify-content: space-between;
+                padding:10% 10% 0 10%;
+            }
+            .one h1{
+                margin-left: 150px;
+            }
+            span{
+                color: lightslategrey;
+                font-size:large;
+                font-weight: lighter;
+            }
+            .about{
+                background-color:floralwhite;
+            }
+            h2{
+                color:deepskyblue;
+                text-align: center;
+                font-size: xx-large;
+            }
+            .about .first{
+                text-align: center;
+            }
+            .about .website{
+                width: 300px;
+                height: 280px;
+                background-color: aliceblue;
+            }
+            .about .manager{
+                width: 300px;
+                height: 280px;
+                background-color: aliceblue;
+            }
+            .about .blog{
+                width: 300px;
+                height: 280px;
+                background-color: aliceblue;
+            }
+            .about img{
+                height: 100px;
+                width: 300px;
+            }
+            .about .whole{
+                display: flex;
+                justify-content: space-around; 
+                margin: 20px;         
+            }
+            h3 {
+                padding: 10px;
+            }
+            .whole p{
+                padding: 10px;
+            }
+            .about .second .css{
+                height: 200px;
+                width: 200px;
+                background-color: aliceblue;
+            }
+            .about .second .javascript{
+                height: 200px;
+                width: 200px;
+                background-color: aliceblue;
+            }
+            .about .second .react{
+                height: 200px;
+                width: 200px;
+                background-color: aliceblue;
+            }
+            .about .second{
+                display: flex;
+                justify-content:space-around;
+                padding: 30px;
+            }
+            .about .second p{
+                padding: 10px;
+            }
+            .about .second h3{
+                padding: 10px;
+            }
+            form {
+                text-align: center;
+            }
+            input {
+                width: 50%;
+                border-radius: 10px;
+            }
+            textarea {
+                height: 100px;
+                width: 50%;
+                border-radius: 10px;
+            }
+            button {
+                background-color:deepskyblue;
+                width: 50%;
+                border-radius: 10px;
+                border-color: deepskyblue;
+            }
+            .about .footer {
+                background-color: deepskyblue;
+                height: 40px;
+                width: 100%;
+            }
+            .footer p{
+                text-align: center;
+                padding: 10px;
+            }
+            .about .last{
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+            }
+            .about .tag{
+                margin:2% 0 0 50%;
+            }
+           
+        </style>
+</head>
+
+<body>
+    <div class="bar">
+        <ul class="my">
+            <li class="list">MyPortfolio</li>
+            <li> <a href=""></a>Home</li>
+            <li><a href=""></a>About</li>
+            <li><a href=""></a>Projects</li>
+            <li><a href=""></a>Skils</li>
+            <li><a href=""></a>Contact</li>
+        </ul>
+    </div>
+    <div class="one">
+    <img src="image1.jpeg" alt="my image">
+    <h1>Hi I'm Binti Omar
+    <span><p>A front-end developer passionate about clean design,responsive layouts,and user experience.</p></h1></span>
+    </div>
+    <div class="about">
+        <h2>About Me</h2>
+        <p class="first">I'm a self-taught developer with experience in HTML,CSS,JavaScript,and modern frameworks like React.I <br> enjoy
+            turning complex problems into simple,beautiful,and intuitive designs.When I'm not coding,you'll <br> find me
+            sketching or reading tech blogs.</p>
+        <h2>My Projects</h2>
+        <div class="whole">
+        <div class="website">
+            <img src="image2.webp" alt="my image">
+            <h3>Portfolio Website</h3>
+            <p>A personal website built with HTML,CSS and JavaScript to showcase my skills and projects </p>
+        </div>
+        <div class="manager">
+            <img src="image3.png" alt="my image">
+            <h3>Task Manager</h3>
+            <p>A to-do list app built using React and local storage to manage daily tasks.</p>
+        </div>
+        <div class="blog">
+            <img src="image4.png" alt="my image">
+            <h3>Blog Template</h3>
+            <p>A clean and responsive blog layout using Flexbox and CSS Grid.</p> </div></div>
+            <h2>My Skills</h2>
+            <div class="second">
+            <div class="css">
+                <H3>HTML & CSS</H3>
+                <p>Semantic markup,responsive design,layout with Flexbox and Grid.</p>
+            </div>
+            <div class="javascript">
+                <H3>JavaScript</H3>
+                <p>DOM manipulation,ES6+,APIs,and dynamic interfaces.</p>
+            </div>
+            <div class="react">
+                <h3>React</h3>
+                <p>Component-based UI,props,& state hooks,and routing.</p>
+            </div></div>
+            <h2>Contact Me</h2>
+            <form action="">
+                <input type="text" placeholder="Your Name" required><br><br>
+                <input type="email" placeholder="Your Email" required><br><br>
+                <textarea name="" id="" placeholder="Your Message"></textarea><br><br>
+                <button type="submit">Send</button>
+            </form>
+            <div class="tag">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg" style="color: #0000ff;"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg" style="color: #0000ff;"></i></a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg" style="color: #0000ff;"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #0000ff;"></i></a>
+            </div>
+            <div class="footer">
+                <p>2025 Binti Omar.All rights reserved.</p>
+            </div>
+            <a class="last" href="www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #1f5132;"></i></a>
+        </div>
+</body>
+
+</html>
