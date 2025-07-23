@@ -17,7 +17,6 @@
             top: 0;
             width: 100%;
         }
-
         .bar ul {
             list-style: none;
             padding: 10px;
@@ -25,159 +24,110 @@
             display: flex;
             font-weight: bold;
         }
-
         .bar li:hover {
             color: crimson;
         }
-
         .bar .list {
             margin-right: 60%;
         }
-
         .bar li {
             padding: 10px;
         }
-
         .one {
             display: flex;
             justify-content: space-between;
             padding: 10% 10% 0 10%;
         }
-
         .one h1 {
             margin-left: 150px;
         }
-
         span {
             color: lightslategrey;
             font-size: large;
             font-weight: lighter;
         }
-
         .about {
             background-color: floralwhite;
         }
-
         h2 {
             color: deepskyblue;
             text-align: center;
             font-size: xx-large;
         }
-
         .about .first {
             text-align: center;
         }
+        .about .projects{
+          width: 300px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10%;
 
-        .about .website {
-            width: 300px;
-            height: 280px;
-            background-color: aliceblue;
         }
-
-        .about .manager {
-            width: 300px;
-            height: 280px;
-            background-color: aliceblue;
-        }
-
-        .about .blog {
-            width: 300px;
-            height: 280px;
-            background-color: aliceblue;
-        }
-
         .about img {
             height: 100px;
             width: 300px;
         }
-
         .about .whole {
             display: flex;
             justify-content: space-around;
             margin: 20px;
         }
-
         h3 {
             padding: 10px;
         }
-
         .whole p {
             padding: 10px;
         }
-
-        .about .second .css {
-            height: 200px;
-            width: 200px;
-            background-color: aliceblue;
+        .about .second .skills {
+            width: 300px;
+            padding: 10px;
+            background-color: white;
+            border-radius:10px ;
         }
-
-        .about .second .javascript {
-            height: 200px;
-            width: 200px;
-            background-color: aliceblue;
-        }
-
-        .about .second .react {
-            height: 200px;
-            width: 200px;
-            background-color: aliceblue;
-        }
-
         .about .second {
             display: flex;
             justify-content: space-around;
-            padding: 30px;
+            width: 80%;
+            margin: auto;
         }
-
-        .about .second p {
-            padding: 10px;
-        }
-
-        .about .second h3 {
-            padding: 10px;
-        }
-
         form {
             text-align: center;
         }
-
         input {
             width: 50%;
             border-radius: 10px;
         }
-
         textarea {
             height: 100px;
             width: 50%;
             border-radius: 10px;
         }
-
         button {
             background-color: deepskyblue;
             width: 50%;
             border-radius: 10px;
             border-color: deepskyblue;
         }
-
         .about .footer {
             background-color: deepskyblue;
             height: 40px;
             width: 100%;
         }
-
         .footer p {
             text-align: center;
             padding: 10px;
             color: white;
         }
-
         .about .last {
             position: fixed;
             bottom: 30px;
             right: 30px;
+            background-color:green;
+            padding: 20px;
+            border-radius: 48%;
         }
-
-        .about .tag {
+    .about .tag {
             margin: 2% 0 0 50%;
         }
     </style>
@@ -209,17 +159,17 @@
             sketching or reading tech blogs.</p>
         <h2>My Projects</h2>
         <div class="whole">
-            <div class="website">
+            <div class="projects">
                 <img src="image2.jpg" alt="my image">
                 <h3>Portfolio Website</h3>
                 <p>A personal website built with HTML,CSS and JavaScript to showcase my skills and projects </p>
             </div>
-            <div class="manager">
+            <div class="projects">
                 <img src="image3.jpg" alt="my image">
                 <h3>Task Manager</h3>
                 <p>A to-do list app built using React and local storage to manage daily tasks.</p>
             </div>
-            <div class="blog">
+            <div class="projects">
                 <img src="image4.jpg" alt="my image">
                 <h3>Blog Template</h3>
                 <p>A clean and responsive blog layout using Flexbox and CSS Grid.</p>
@@ -227,15 +177,15 @@
         </div>
         <h2>My Skills</h2>
         <div class="second">
-            <div class="css">
+            <div class="skills">
                 <H3>HTML & CSS</H3>
                 <p>Semantic markup,responsive design,layout with Flexbox and Grid.</p>
             </div>
-            <div class="javascript">
+            <div class="skills">
                 <H3>JavaScript</H3>
                 <p>DOM manipulation,ES6+,APIs,and dynamic interfaces.</p>
             </div>
-            <div class="react">
+            <div class="skills">
                 <h3>React</h3>
                 <p>Component-based UI,props,& state hooks,and routing.</p>
             </div>
@@ -250,7 +200,7 @@
         <div class="tag">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"
                     style="color: #0000ff;"></i></a>
-            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"
+            <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"
                     style="color: #0000ff;"></i></a>
             <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><i
                     class="fa-brands fa-linkedin-in fa-lg" style="color: #0000ff;"></i></a>
@@ -260,8 +210,8 @@
         <div class="footer">
             <p><i class="fa-regular fa-copyright" style="color: #000000;"></i>2025 Binti Omar.All rights reserved.</p>
         </div>
-        <a class="last" href="www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"
-                style="color: #1f5132;"></i></a>
+        <div class="last">
+        <a href="www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a></div>
     </div>
 </body>
 
