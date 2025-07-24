@@ -36,7 +36,7 @@
         .one {
             display: flex;
             justify-content: space-between;
-            padding: 10% 10% 0 10%;
+            padding: 100px;
         }
         .one h1 {
             margin-left: 150px;
@@ -48,6 +48,7 @@
         }
         .about {
             background-color: floralwhite;
+            padding: 100px;
         }
         h2 {
             color: deepskyblue;
@@ -57,12 +58,11 @@
         .about .first {
             text-align: center;
         }
-        .about .projects{
-          width: 300px;
+        .about .projects {
+            width: 300px;
             background-color: white;
             padding: 40px;
             border-radius: 20%;
-
         }
         .about img {
             height: 100px;
@@ -72,6 +72,7 @@
             display: flex;
             justify-content: space-around;
             margin: 20px;
+            padding: 100px;
         }
         h3 {
             padding: 10px;
@@ -83,16 +84,18 @@
             width: 300px;
             padding: 10px;
             background-color: white;
-            border-radius:10px ;
+            border-radius: 10px;
         }
         .about .second {
             display: flex;
             justify-content: space-around;
             width: 80%;
             margin: auto;
+            padding: 100px;
         }
         form {
             text-align: center;
+            padding: 100px;
         }
         input {
             width: 50%;
@@ -123,11 +126,11 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background-color:green;
+            background-color: green;
             padding: 20px;
             border-radius: 48%;
         }
-    .about .tag {
+        .about .tag {
             margin: 2% 0 0 50%;
         }
     </style>
@@ -137,28 +140,28 @@
     <div class="bar">
         <ul class="my">
             <li class="list">MyPortfolio</li>
-            <li> <a href=""></a>Home</li>
-            <li><a href=""></a>About</li>
-            <li><a href=""></a>Projects</li>
-            <li><a href=""></a>Skils</li>
-            <li><a href=""></a>Contact</li>
+            <li> <a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#whole">Projects</a></li>
+            <li><a href="#second">Skills</a></li>
+            <li><a href="#form">Contact</a></li>
         </ul>
     </div>
-    <div class="one">
-        <img src="image1.jpeg" alt="my image">
+    <div class="one" id="home">
+        <img src="image5.avif" alt="my image" height="200px" width="300px">
         <h1>Hi,I'm Binti Omar
             <span>
                 <p>A front-end developer passionate about clean design,responsive layouts,and user experience.</p>
         </h1></span>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <h2>About Me</h2>
         <p class="first">I'm a self-taught developer with experience in HTML,CSS,JavaScript,and modern frameworks like
             React.I <br> enjoy
             turning complex problems into simple,beautiful,and intuitive designs.When I'm not coding,you'll <br> find me
             sketching or reading tech blogs.</p>
         <h2>My Projects</h2>
-        <div class="whole">
+        <div class="whole" id="whole" >
             <div class="projects">
                 <img src="image2.jpg" alt="my image">
                 <h3>Portfolio Website</h3>
@@ -176,7 +179,7 @@
             </div>
         </div>
         <h2>My Skills</h2>
-        <div class="second">
+        <div class="second" id="second">
             <div class="skills">
                 <H3>HTML & CSS</H3>
                 <p>Semantic markup,responsive design,layout with Flexbox and Grid.</p>
@@ -191,10 +194,12 @@
             </div>
         </div>
         <h2>Contact Me</h2>
-        <form action="">
-            <input type="text" placeholder="Your Name" required><br><br>
-            <input type="email" placeholder="Your Email" required><br><br>
-            <textarea name="" id="" placeholder="Your Message"></textarea><br><br>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7fa636d6-f9f6-4068-9368-57abefcae577">
+            <input type="text" placeholder="Your Name" name="name" required><br><br>
+            <input type="email" placeholder="Your Email" name="email" required><br><br>
+            <textarea name="Message" placeholder="Your Message" required></textarea><br><br>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             <button type="submit">Send</button>
         </form>
         <div class="tag">
@@ -211,7 +216,9 @@
             <p><i class="fa-regular fa-copyright" style="color: #000000;"></i>2025 Binti Omar.All rights reserved.</p>
         </div>
         <div class="last">
-        <a href="www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a></div>
+            <a href="https://wa.me/254734038415" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"
+                    style="color: #ffffff;"></i></a>
+        </div>
     </div>
 </body>
 
